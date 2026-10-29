@@ -4,31 +4,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CFC JF | Sua Habilitação Começa Aqui</title>
-  <meta name="description" content="CFC JF - Centro de Formação de Condutores em Campo Mourão. Conheça nossos serviços e entre em contato.">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta name="description" content="CFC JF - Centro de Formação de Condutores em Campo Mourão, Paraná. Entre em contato para informações sobre habilitação.">
+
+  <title>CFC JF | Auto Escola em Campo Mourão</title>
 
   <style>
     :root {
-      --azul: #071d3b;
-      --azul2: #103563;
-      --amarelo: #ffcc22;
+      --azul: #102746;
+      --azul-claro: #1769aa;
+      --amarelo: #ffc928;
       --branco: #ffffff;
-      --cinza: #f4f6fa;
-      --texto: #243247;
+      --cinza: #f3f6fa;
+      --texto: #293548;
     }
 
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
+    }
+
+    html {
       scroll-behavior: smooth;
     }
 
     body {
-      font-family: 'Montserrat', sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       color: var(--texto);
       line-height: 1.6;
     }
@@ -43,164 +45,141 @@
       padding: 10px 7%;
       display: flex;
       justify-content: space-between;
-      gap: 15px;
+      gap: 10px;
       flex-wrap: wrap;
-      font-size: 13px;
+      font-size: 14px;
     }
 
     header {
       background: white;
       padding: 18px 7%;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      gap: 25px;
+      justify-content: space-between;
+      gap: 20px;
       position: sticky;
       top: 0;
       z-index: 10;
-      box-shadow: 0 3px 15px #00000010;
+      box-shadow: 0 3px 15px #00000012;
     }
 
     .logo {
       color: var(--azul);
-      font-size: 34px;
-      font-weight: 800;
-      line-height: 1;
+      font-size: 25px;
+      font-weight: 900;
+      line-height: 1.1;
     }
 
     .logo span {
-      color: #eeb900;
-    }
-
-    .logo small {
-      display: block;
-      font-size: 10px;
-      letter-spacing: 1px;
-      margin-top: 5px;
+      color: var(--azul-claro);
     }
 
     nav {
       display: flex;
-      gap: 25px;
-      align-items: center;
       flex-wrap: wrap;
+      gap: 22px;
     }
 
     nav a {
       color: var(--azul);
-      font-weight: 600;
-      font-size: 14px;
+      font-weight: bold;
     }
 
     nav a:hover {
-      color: #d9a900;
-    }
-
-    .botao {
-      display: inline-block;
-      background: var(--amarelo);
-      color: var(--azul);
-      padding: 13px 22px;
-      border-radius: 30px;
-      font-weight: 800;
-      transition: .3s;
-      border: none;
-    }
-
-    .botao:hover {
-      background: white;
-      transform: translateY(-3px);
-      box-shadow: 0 7px 20px #00000020;
+      color: var(--azul-claro);
     }
 
     .hero {
       min-height: 570px;
+      padding: 90px 7%;
       display: flex;
       align-items: center;
-      padding: 70px 7%;
-      background:
-        linear-gradient(90deg, #061a36 0%, #061a36e8 38%, #061a3640 100%),
-        url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1800&q=85')
-        center/cover;
       color: white;
+      background:
+        linear-gradient(90deg, #102746f5, #102746a8),
+        url("https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
     }
 
     .hero-conteudo {
-      max-width: 650px;
-      animation: subir 1s ease;
+      max-width: 760px;
     }
 
     .etiqueta {
-      display: inline-block;
       color: var(--amarelo);
-      border: 1px solid #ffcc2270;
-      background: #ffcc2215;
-      padding: 7px 14px;
-      border-radius: 30px;
-      font-size: 12px;
-      font-weight: 700;
-      margin-bottom: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
     }
 
     h1 {
-      font-size: clamp(38px, 5vw, 65px);
+      font-size: clamp(38px, 6vw, 65px);
       line-height: 1.1;
-      margin-bottom: 22px;
-    }
-
-    h1 span {
-      color: var(--amarelo);
+      margin: 20px 0;
     }
 
     .hero p {
-      color: #e1e8f2;
-      font-size: 17px;
-      max-width: 510px;
-      margin-bottom: 30px;
+      font-size: 19px;
+      max-width: 620px;
+      color: #e8eef6;
     }
 
     .botoes {
       display: flex;
-      align-items: center;
-      gap: 14px;
+      gap: 15px;
       flex-wrap: wrap;
+      margin-top: 28px;
     }
 
-    .botao-contorno {
-      border: 1px solid #ffffff80;
-      color: white;
-      padding: 12px 22px;
-      border-radius: 30px;
-      font-weight: 600;
+    .botao {
+      display: inline-block;
+      padding: 14px 23px;
+      border-radius: 7px;
+      font-weight: bold;
+      transition: .2s;
+    }
+
+    .botao:hover {
+      transform: translateY(-2px);
+    }
+
+    .botao-amarelo {
+      background: var(--amarelo);
+      color: var(--azul);
+    }
+
+    .botao-branco {
+      background: white;
+      color: var(--azul);
     }
 
     section {
-      padding: 80px 7%;
+      padding: 75px 7%;
     }
 
-    .titulo {
-      text-align: center;
-      max-width: 650px;
-      margin: 0 auto 45px;
+    .container {
+      max-width: 1150px;
+      margin: auto;
     }
 
-    .titulo span {
-      color: #bd9200;
-      font-weight: 800;
+    .subtitulo {
+      color: var(--azul-claro);
       text-transform: uppercase;
-      font-size: 12px;
       letter-spacing: 2px;
+      font-size: 13px;
+      font-weight: bold;
     }
 
-    .titulo h2 {
+    h2 {
       color: var(--azul);
-      font-size: clamp(28px, 4vw, 40px);
+      font-size: clamp(28px, 4vw, 42px);
       line-height: 1.2;
-      margin: 10px 0;
+      margin: 12px 0 18px;
     }
 
-    .titulo p {
-      color: #68758a;
+    .descricao {
+      max-width: 720px;
+      color: #687386;
     }
 
     .servicos {
@@ -209,263 +188,155 @@
 
     .grade {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 22px;
+      margin-top: 35px;
     }
 
-    .card {
+    .cartao {
+      padding: 28px;
       background: white;
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: 0 5px 25px #071d3b0c;
-      transition: .3s;
+      border-radius: 13px;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 8px 25px #1027460a;
     }
 
-    .card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 15px 35px #071d3b18;
+    .icone {
+      font-size: 37px;
     }
 
-    .card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      display: block;
-    }
-
-    .card-conteudo {
-      padding: 24px;
-    }
-
-    .numero {
-      display: inline-grid;
-      place-items: center;
-      background: var(--amarelo);
+    .cartao h3 {
       color: var(--azul);
-      width: 38px;
-      height: 38px;
-      border-radius: 12px;
-      font-weight: 800;
-      margin-bottom: 15px;
+      margin: 15px 0 10px;
     }
 
-    .card h3 {
-      color: var(--azul);
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
-
-    .card p {
-      font-size: 14px;
-      color: #68758a;
-    }
-
-    .sobre {
+    .sobre-grade {
       display: grid;
       grid-template-columns: 1fr 1fr;
       align-items: center;
-      gap: 60px;
+      gap: 45px;
     }
 
-    .sobre img {
-      width: 100%;
-      height: 430px;
-      object-fit: cover;
-      border-radius: 24px;
-      box-shadow: 15px 15px 0 var(--amarelo);
+    .foto {
+      min-height: 350px;
+      border-radius: 16px;
+      background:
+        url("https://images.unsplash.com/photo-1489824904134-891ab64532f1?auto=format&fit=crop&w=1200&q=85")
+        center/cover;
     }
 
-    .sobre h2 {
-      color: var(--azul);
-      font-size: clamp(30px, 4vw, 42px);
-      line-height: 1.2;
-      margin: 12px 0 20px;
-    }
-
-    .sobre p {
-      color: #647187;
-      margin-bottom: 20px;
-    }
-
-    .vantagem {
+    .lista {
       list-style: none;
-      margin: 22px 0 28px;
+      margin: 22px 0;
     }
 
-    .vantagem li {
+    .lista li {
       margin: 12px 0;
-      font-weight: 600;
     }
 
-    .vantagem li::before {
+    .lista li::before {
       content: "✓";
-      color: #bd9200;
-      background: #fff4c7;
-      padding: 3px 8px;
-      border-radius: 50%;
-      margin-right: 10px;
+      color: #16834a;
+      font-weight: bold;
+      margin-right: 12px;
     }
 
-    .faixa {
+    .chamada {
       background: var(--azul);
       color: white;
       text-align: center;
-      padding: 65px 7%;
     }
 
-    .faixa h2 {
-      font-size: clamp(28px, 4vw, 42px);
-      margin-bottom: 12px;
+    .chamada h2 {
+      color: white;
     }
 
-    .faixa h2 span {
-      color: var(--amarelo);
+    .chamada p {
+      max-width: 650px;
+      margin: auto;
+      color: #dce7f4;
     }
 
-    .faixa p {
-      color: #d3deee;
-      margin-bottom: 25px;
+    .chamada .botoes {
+      justify-content: center;
+    }
+
+    .contatos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+      margin-top: 28px;
     }
 
     .contato {
       background: var(--cinza);
+      padding: 25px;
+      border-radius: 12px;
+      overflow-wrap: anywhere;
     }
 
-    .contato-grade {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-    }
-
-    .contato-card {
-      background: white;
-      padding: 28px;
-      border-radius: 16px;
-      text-align: center;
-      box-shadow: 0 5px 25px #071d3b0a;
-    }
-
-    .contato-card .icone {
-      font-size: 30px;
-      margin-bottom: 12px;
-    }
-
-    .contato-card h3 {
+    .contato h3 {
       color: var(--azul);
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
 
-    .contato-card p {
-      color: #68758a;
-      font-size: 14px;
+    .contato a {
+      color: var(--azul-claro);
+      font-weight: bold;
     }
 
     footer {
-      background: #04152c;
-      color: white;
-      padding: 35px 7%;
+      background: #09182b;
+      color: #dbe4ef;
+      padding: 30px 7%;
       text-align: center;
+      font-size: 14px;
     }
 
-    footer .logo {
-      color: white;
-      margin-bottom: 18px;
-    }
-
-    footer p {
-      color: #c4cede;
-      font-size: 13px;
-      margin-top: 12px;
-    }
-
-    .whatsapp-flutuante {
+    .whatsapp {
       position: fixed;
-      right: 22px;
-      bottom: 22px;
+      right: 20px;
+      bottom: 20px;
       z-index: 20;
-      width: 58px;
-      height: 58px;
-      border-radius: 50%;
-      background: #20c866;
+      background: #20bd5a;
       color: white;
-      display: grid;
-      place-items: center;
-      font-size: 29px;
+      padding: 14px 20px;
+      border-radius: 50px;
+      font-weight: bold;
       box-shadow: 0 5px 20px #0003;
     }
 
-    @keyframes subir {
-      from { opacity: 0; transform: translateY(25px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @media (max-width: 950px) {
+    @media (max-width: 800px) {
       header {
         flex-direction: column;
-      }
-
-      nav {
-        justify-content: center;
-        gap: 15px;
-      }
-
-      .grade {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .sobre {
-        grid-template-columns: 1fr;
-        gap: 40px;
-      }
-
-      .sobre img {
-        height: 340px;
-      }
-    }
-
-    @media (max-width: 600px) {
-      .topo {
-        justify-content: center;
-        text-align: center;
-      }
-
-      header {
-        padding: 20px 5%;
+        align-items: flex-start;
       }
 
       nav {
         gap: 12px;
       }
 
-      nav a {
-        font-size: 12px;
-      }
-
       .hero {
-        min-height: 530px;
-        padding: 55px 6%;
-        background-position: 58% center;
+        min-height: 480px;
+        padding: 65px 7%;
       }
 
-      .hero p {
-        font-size: 15px;
-      }
-
-      section {
-        padding: 60px 6%;
-      }
-
-      .grade,
-      .contato-grade {
+      .grade {
         grid-template-columns: 1fr;
       }
 
-      .card img {
-        height: 220px;
+      .sobre-grade,
+      .contatos {
+        grid-template-columns: 1fr;
       }
 
-      .sobre img {
-        height: 280px;
+      .foto {
+        min-height: 250px;
+      }
+
+      .topo {
+        justify-content: center;
+        text-align: center;
       }
     }
   </style>
@@ -474,192 +345,215 @@
 <body>
 
   <div class="topo">
-    <span>📍 Rua Rocha Pombo, 1674 - Centro, Campo Mourão - PR</span>
-    <span>☎ (44) 3523-3709</span>
+    <span>📍 Campo Mourão - Paraná</span>
+    <span>📞 (44) 3523-3709</span>
   </div>
 
   <header>
     <a href="#inicio" class="logo">
-      CFC <span>JF.</span>
-      <small>CENTRO DE FORMAÇÃO DE CONDUTORES</small>
+      CFC <span>JF</span><br>
+      <small style="font-size: 12px">CENTRO DE FORMAÇÃO</small>
     </a>
 
     <nav>
       <a href="#inicio">Início</a>
       <a href="#servicos">Serviços</a>
-      <a href="#sobre">Sobre nós</a>
+      <a href="#sobre">Sobre</a>
       <a href="#contato">Contato</a>
-      <a class="botao" href="#contato">Fale conosco ↗</a>
     </nav>
   </header>
 
   <main>
     <section class="hero" id="inicio">
       <div class="hero-conteudo">
-        <span class="etiqueta">SEU FUTURO COMEÇA AQUI</span>
+        <div class="etiqueta">Seu futuro começa no caminho</div>
 
-        <h1>
-          Sua liberdade<br>
-          começa com a<br>
-          <span>habilitação.</span>
-        </h1>
+        <h1>Conquiste sua liberdade de dirigir.</h1>
 
         <p>
-          Prepare-se para conquistar sua CNH com orientação,
-          aprendizado e foco em uma direção mais segura.
+          Dê o próximo passo rumo à sua habilitação.
+          Busque informações sobre formação de condutores
+          e prepare-se para dirigir com responsabilidade.
         </p>
 
         <div class="botoes">
-          <a class="botao"
+          <a class="botao botao-amarelo"
              href="https://wa.me/554435233709"
              target="_blank" rel="noopener">
-            💬 Entre em contato
+            Fale conosco
           </a>
 
-          <a class="botao-contorno" href="#servicos">
-            Conheça os serviços ↓
+          <a class="botao botao-branco" href="#servicos">
+            Conheça os serviços
           </a>
         </div>
       </div>
     </section>
 
     <section class="servicos" id="servicos">
-      <div class="titulo">
-        <span>O que oferecemos</span>
-        <h2>Seu caminho para dirigir começa aqui</h2>
-        <p>Conheça as opções de atendimento do CFC JF.</p>
-      </div>
+      <div class="container">
+        <div class="subtitulo">Nossos serviços</div>
+        <h2>Comece sua jornada com informação.</h2>
 
-      <div class="grade">
-        <article class="card">
-          <img
-            src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=800&q=80"
-            alt="Pessoa aprendendo a dirigir">
-          <div class="card-conteudo">
-            <span class="numero">01</span>
-            <h3>Primeira habilitação</h3>
-            <p>Comece sua jornada para conquistar a primeira CNH.</p>
-          </div>
-        </article>
-
-        <article class="card">
-          <img
-            src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=800&q=80"
-            alt="Motocicleta na estrada">
-          <div class="card-conteudo">
-            <span class="numero">02</span>
-            <h3>Categoria A e B</h3>
-            <p>Consulte as opções para habilitação de moto e carro.</p>
-          </div>
-        </article>
-
-        <article class="card">
-          <img
-            src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=800&q=80"
-            alt="Automóvel moderno">
-          <div class="card-conteudo">
-            <span class="numero">03</span>
-            <h3>Adição de categoria</h3>
-            <p>Consulte os requisitos para adicionar uma categoria à CNH.</p>
-          </div>
-        </article>
-
-        <article class="card">
-          <img
-            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80"
-            alt="Pessoa estudando">
-          <div class="card-conteudo">
-            <span class="numero">04</span>
-            <h3>Orientação e suporte</h3>
-            <p>Receba informações sobre etapas, documentos e procedimentos.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="sobre" id="sobre">
-      <div>
-        <img
-          src="https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=1200&q=85"
-          alt="Carro em uma estrada">
-      </div>
-
-      <div>
-        <span class="etiqueta">CONHEÇA O CFC JF</span>
-        <h2>Aprender a dirigir é conquistar novas possibilidades.</h2>
-
-        <p>
-          O CFC JF está em Campo Mourão, Paraná. Entre em contato
-          para conhecer os serviços disponíveis, esclarecer dúvidas
-          e saber como iniciar seu processo de habilitação.
+        <p class="descricao">
+          Consulte o CFC JF para conhecer os serviços disponíveis,
+          as categorias de habilitação e as etapas necessárias.
         </p>
 
-        <ul class="vantagem">
-          <li>Atendimento para esclarecer suas dúvidas</li>
-          <li>Orientações sobre o processo de habilitação</li>
-          <li>Informações sobre categorias e procedimentos</li>
-          <li>Localização central em Campo Mourão</li>
-        </ul>
+        <div class="grade">
+          <article class="cartao">
+            <div class="icone">🚗</div>
+            <h3>Primeira habilitação</h3>
+            <p>
+              Obtenha informações sobre os requisitos e as etapas
+              para iniciar seu processo de habilitação.
+            </p>
+          </article>
 
-        <a class="botao" href="#contato">Conheça o CFC JF →</a>
+          <article class="cartao">
+            <div class="icone">🏍️</div>
+            <h3>Categorias de habilitação</h3>
+            <p>
+              Consulte a equipe sobre as categorias disponíveis
+              e os requisitos para cada uma.
+            </p>
+          </article>
+
+          <article class="cartao">
+            <div class="icone">🛣️</div>
+            <h3>Orientação ao condutor</h3>
+            <p>
+              Tire dúvidas sobre aulas, documentação e procedimentos
+              relacionados à formação de condutores.
+            </p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="faixa">
-      <h2>Pronto para dar o <span>próximo passo?</span></h2>
-      <p>Entre em contato e tire suas dúvidas sobre como começar.</p>
+    <section id="sobre">
+      <div class="container sobre-grade">
+        <div>
+          <div class="subtitulo">CFC JF</div>
 
-      <a class="botao"
-         href="https://wa.me/554435233709"
-         target="_blank" rel="noopener">
-        💬 Falar com o CFC JF
-      </a>
+          <h2>Mais conhecimento para um trânsito seguro.</h2>
+
+          <p>
+            O Centro de Formação de Condutores JF está localizado
+            no Centro de Campo Mourão, Paraná. Entre em contato
+            para confirmar os serviços, valores e horários disponíveis.
+          </p>
+
+          <ul class="lista">
+            <li>Localização central em Campo Mourão</li>
+            <li>Informações sobre o processo de habilitação</li>
+            <li>Atendimento para esclarecer dúvidas</li>
+          </ul>
+
+          <a class="botao botao-amarelo"
+             style="background: var(--azul); color: white"
+             href="https://wa.me/554435233709"
+             target="_blank" rel="noopener">
+            Entrar em contato
+          </a>
+        </div>
+
+        <div class="foto" role="img"
+             aria-label="Imagem ilustrativa de um automóvel"></div>
+      </div>
     </section>
 
-    <section class="contato" id="contato">
-      <div class="titulo">
-        <span>Estamos à disposição</span>
-        <h2>Entre em contato</h2>
-        <p>Escolha uma das opções abaixo para falar conosco.</p>
+    <section class="chamada">
+      <div class="container">
+        <div class="subtitulo" style="color: var(--amarelo)">
+          Estamos à disposição
+        </div>
+
+        <h2>Tem dúvidas sobre sua habilitação?</h2>
+
+        <p>
+          Entre em contato para consultar os serviços,
+          a documentação necessária e os valores atualizados.
+        </p>
+
+        <div class="botoes">
+          <a class="botao botao-amarelo"
+             href="https://wa.me/554435233709"
+             target="_blank" rel="noopener">
+            Consultar informações
+          </a>
+        </div>
       </div>
+    </section>
 
-      <div class="contato-grade">
-        <div class="contato-card">
-          <div class="icone">📞</div>
-          <h3>Telefone</h3>
-          <p>(44) 3523-3709</p>
-        </div>
+    <section id="contato">
+      <div class="container">
+        <div class="subtitulo">Fale conosco</div>
+        <h2>Contato e localização</h2>
 
-        <div class="contato-card">
-          <div class="icone">📍</div>
-          <h3>Endereço</h3>
-          <p>Rua Rocha Pombo, 1674<br>
-          Centro, Campo Mourão - PR</p>
-        </div>
+        <div class="contatos">
+          <div class="contato">
+            <h3>📍 Endereço</h3>
 
-        <div class="contato-card">
-          <div class="icone">📄</div>
-          <h3>CNPJ</h3>
-          <p>02427579000107</p>
+            <p>
+              Rua Rocha Pombo, 1674 - Centro<br>
+              Campo Mourão - PR<br>
+              CEP: 87303-220
+            </p>
+
+            <p style="margin-top: 15px">
+              <a href="https://www.google.com/maps/search/?api=1&query=Rua+Rocha+Pombo+1674+Campo+Mourao+PR"
+                 target="_blank" rel="noopener">
+                Abrir no Google Maps ↗
+              </a>
+            </p>
+          </div>
+
+          <div class="contato">
+            <h3>📞 Telefone</h3>
+
+            <p>
+              <a href="tel:+554435233709">(44) 3523-3709</a>
+            </p>
+
+            <h3 style="margin-top: 20px">CNPJ</h3>
+            <p>02427579000107</p>
+
+            <p style="margin-top: 12px">
+              <a href="https://wa.me/554435233709"
+                 target="_blank" rel="noopener">
+                Consultar pelo WhatsApp ↗
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="logo">CFC <span>JF.</span>
-      <small>CENTRO DE FORMAÇÃO DE CONDUTORES</small>
-    </div>
-
-    <p>Seu caminho para dirigir começa aqui.</p>
-    <p>© 2026 CFC JF. Todos os direitos reservados.</p>
+    <p><strong>CFC JF - CENTRO DE FORMAÇÃO DE CONDUTORES</strong></p>
+    <p>Campo Mourão - Paraná</p>
+    <p>CNPJ: 02427579000107</p>
+    <p style="margin-top: 12px">
+      © <span id="ano"></span> CFC JF. Todos os direitos reservados.
+    </p>
+    <p style="margin-top: 8px; font-size: 12px">
+      Página demonstrativa independente, não oficial.
+      Confirme os dados e serviços com a empresa antes de publicar.
+    </p>
   </footer>
 
-  <a class="whatsapp-flutuante"
+  <a class="whatsapp"
      href="https://wa.me/554435233709"
-     target="_blank"
-     rel="noopener"
-     aria-label="Falar pelo WhatsApp">◉</a>
+     target="_blank" rel="noopener">
+    WhatsApp ✆
+  </a>
+
+  <script>
+    document.getElementById("ano").textContent =
+      new Date().getFullYear();
+  </script>
 
 </body>
 </html>
